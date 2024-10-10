@@ -23,9 +23,8 @@ export default function Album() {
     <div>
       <div className="grid gap-2 grid-cols-2 sm:grid-cols-3 md:grid-cols-5 xl:grid-cols-6">
         {data?.map((image) => (
-          <Link href={`gallery/${image.id}`}>
+          <Link key={image.id} href={`gallery/${image.id}`}>
             <img
-              key={image.id}
               src={image.url}
               alt={image.title}
               className="object-cover w-full h-36 cursor-pointer hover:opacity-70"
