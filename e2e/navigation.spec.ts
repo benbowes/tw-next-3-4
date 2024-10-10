@@ -52,6 +52,4 @@ test("Navigation", async ({ page }) => {
   await page
     .getByRole("link", { name: "reprehenderit est deserunt velit ipsam" })
     .click();
-
-  await page.goto("http://localhost:3000/gallery/2");
 });
